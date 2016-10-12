@@ -18,8 +18,8 @@
 FROM jemimalwh/seq2hla:v0.1
 
 ################## BEGIN INSTALLATION ###########################
-git clone https://github.com/EdGreen21/Docker.hla2seq.git
-cp Docker.hla2seq/start.sh /workspace/
+RUN git clone https://github.com/EdGreen21/Docker.hla2seq.git \
+&& cp Docker.hla2seq/start.sh /workspace/
 
 # Change workdir to /data/
 WORKDIR /workspace/
