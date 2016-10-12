@@ -18,10 +18,7 @@
 FROM jemimalwh/seq2hla:v0.1
 
 ################## BEGIN INSTALLATION ###########################
-
-
-# Change user to back to biodocker
-USER biodocker
+git clone https://github.com/EdGreen21/Docker.hla2seq.git
 
 # Change workdir to /data/
 WORKDIR /workspace/
