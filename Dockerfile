@@ -19,12 +19,13 @@ FROM jemimalwh/seq2hla:v0.1
 
 ################## BEGIN INSTALLATION ###########################
 git clone https://github.com/EdGreen21/Docker.hla2seq.git
+cp Docker.hla2seq/start.sh /workspace/
 
 # Change workdir to /data/
 WORKDIR /workspace/
 
 # Define default command
-ENTRYPOINT ["hostname"]
+ENTRYPOINT ["start.sh"]
 CMD ["-h"]
 
 ##################### INSTALLATION END ##########################
