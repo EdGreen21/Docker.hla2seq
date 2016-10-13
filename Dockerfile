@@ -18,7 +18,8 @@
 FROM jemimalwh/seq2hla:v0.1
 
 ################## BEGIN INSTALLATION ###########################
-COPY start.sh /usr/local/bin/
+COPY start.sh /usr/local/bin/ 
+RUN chmod 777 /usr/local/bin/start.sh
 
 # Change workdir to /data/
 WORKDIR /workspace/
