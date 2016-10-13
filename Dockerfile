@@ -8,18 +8,19 @@
 # Website:          https://github.com/EdGreen21/Docker.hla2seq
 # Tags:             Genomics
 # Provides:         seq2HLA
-# Base Image:       biodckr/biodocker
-# Build Cmd:        docker build --rm -t fred2/opitype .
-# Pull Cmd:         docker pull fred2/optitype
-# Run Cmd:          docker run -v /path/to/file/dir:/data fred2/optitype
+# Base Image:       jemimalwh/seq2hla:v0.1
+# Build Cmd:        docker build 
+# Pull Cmd:         docker pull 
+# Run Cmd:          docker run -i -t -v /path/to/file/dir/:/workspace/ edgreen/seq2hla -e sampleID=xx -e inputBAM=xx
 #################################################################
 
 # Source Image
 FROM jemimalwh/seq2hla:v0.1
 
 ################## BEGIN INSTALLATION ###########################
-RUN git clone https://github.com/EdGreen21/Docker.hla2seq.git \
-&& cp Docker.hla2seq/start.sh /workspace/
+RUN wget https://github.com/EdGreen21/Docker.hla2seq.git/start.sh > /usr/local/bin/
+
+#COPY start.sh /usr/local/bin/
 
 # Change workdir to /data/
 WORKDIR /workspace/
