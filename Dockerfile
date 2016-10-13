@@ -18,9 +18,7 @@
 FROM jemimalwh/seq2hla:v0.1
 
 ################## BEGIN INSTALLATION ###########################
-RUN wget https://github.com/EdGreen21/Docker_seq2HLA/start.sh > /usr/local/bin/
-
-#COPY start.sh /usr/local/bin/
+COPY start.sh /usr/local/bin/
 
 # Change workdir to /data/
 WORKDIR /workspace/
