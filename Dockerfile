@@ -5,7 +5,7 @@
 # Software:         seq2HLA
 # Software Version: 2.2
 # Description:      4-digit HLA typing from .bam files
-# Website:          https://github.com/EdGreen21/Docker.hla2seq
+# Website:          https://github.com/EdGreen21/Docker_seq2HLA
 # Tags:             Genomics
 # Provides:         seq2HLA
 # Base Image:       jemimalwh/seq2hla:v0.1
@@ -18,7 +18,7 @@
 FROM jemimalwh/seq2hla:v0.1
 
 ################## BEGIN INSTALLATION ###########################
-RUN wget https://github.com/EdGreen21/Docker.hla2seq.git/start.sh > /usr/local/bin/
+RUN wget https://github.com/EdGreen21/Docker_seq2HLA/start.sh > /usr/local/bin/
 
 #COPY start.sh /usr/local/bin/
 
