@@ -9,7 +9,7 @@ gzip /workspace/${sampleID}_2.fq
 rm /workspace/${sampleID}_1.fq.gz /workspace/${sampleID}_2.fq.gz
 
 #step 3 run seq2HLA.py:
-python /download/seq2HLA/seq2HLA.py -1 /workspace/${sampleID}_1.repair.fq.gz -2 /workspace/${sampleID}_2.repair.fq.gz -r "/workspace/${sampleID}"
+python /download/seq2hla/seq2HLA.py -1 /workspace/${sampleID}_1.repair.fq.gz -2 /workspace/${sampleID}_2.repair.fq.gz -r "/workspace/${sampleID}"
 
 #step 4 remove files:
 rm /workspace/*.fq /workspace/*.sam /workspace/*.fq.gz 
