@@ -2,7 +2,9 @@
 threads=6
 
 # Extract fastq reads from bam file
-#check if new samtools implementation bam2fq is faster than bedtools implementation
+# Testing shows that samtools fastq is about 3 times as fast as bam2fq.  Also tested Picard and bedtools.
+
+
 /download/bam2fastq/bam2fastq -f -o /workspace/${sampleID}#.fq -q /workspace/${inputBAM}.bam
 
 #step 2 repair .fq files and remove unrepaired
