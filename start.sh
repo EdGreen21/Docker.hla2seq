@@ -3,7 +3,7 @@ threads=6
 
 # Extract fastq reads from bam file
 #check if new samtools implementation bam2fq is faster than bedtools implementation
-/download/bam2fastq/bam2fastq -o /workspace/${sampleID}#.fq -q /workspace/${inputBAM}.bam
+/download/bam2fastq/bam2fastq -f -o /workspace/${sampleID}#.fq -q /workspace/${inputBAM}.bam
 
 #step 2 repair .fq files and remove unrepaired
 /download/bbmap/repair.sh in1=/workspace/${sampleID}_1.fq in2=/workspace/${sampleID}_2.fq out1=/workspace/${sampleID}_1.repair.fq out2=/workspace/${sampleID}_2.repair.fq
