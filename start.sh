@@ -7,7 +7,7 @@ threads=6
 
 #step 2 repair .fq files and remove unrepaired
 /download/bbmap/repair.sh in1=/workspace/${sampleID}_1.fq in2=/workspace/${sampleID}_2.fq out1=/workspace/${sampleID}_1.repair.fq out2=/workspace/${sampleID}_2.repair.fq
-rm /workspace/${sampleID}_1.fq /workspace/${sampleID}_2.fq
+#rm /workspace/${sampleID}_1.fq /workspace/${sampleID}_2.fq
 
 #step 3 run seq2HLA.py:
 python /download/seq2hla/seq2HLA.py -1 /workspace/${sampleID}_1.repair.fq -2 /workspace/${sampleID}_2.repair.fq -r "/workspace/${sampleID}" -p ${threads}
