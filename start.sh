@@ -3,7 +3,7 @@
 # Extract fastq reads from bam file
 # Testing shows that samtools fastq is about 3 times as fast as bam2fq.  Also tested Picard and bedtools.
 # samtools should also be able to only export properly paired reads - must validate this
- samtools fastq /workspace/${sampleID}_1.repair.fq -2 /workspace/${sampleID}_2.repair.fq /workspace/${inputBAM}.bam
+ samtools fastq -1 /workspace/${sampleID}_1.repair.fq -2 /workspace/${sampleID}_2.repair.fq /workspace/${inputBAM}.bam
 
 #/download/bam2fastq/bam2fastq -f -o /workspace/${sampleID}#.fq -q /workspace/${inputBAM}.bam
 
