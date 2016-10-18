@@ -7,7 +7,7 @@
 # Description:      4-digit HLA typing from .bam files
 # Website:          https://github.com/EdGreen21/Docker_seq2HLA
 # Tags:             Genomics
-# Provides:         seq2HLA
+# Provides:         seq2HLA 2.2
 # Base Image:       jemimalwh/seq2hla:v0.1
 # Build Cmd:        docker build -t edgreen/seq2hla:latest /path/to/Docker_seq2HLA/ (may need --build-arg HTTPS_PROXY=https://xxx)
 # Pull Cmd:         docker pull edgreen/seq2hla:latest
