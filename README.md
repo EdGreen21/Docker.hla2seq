@@ -42,7 +42,7 @@ Contact
   Ed Green
   egreen@dkfz-heidelberg.de  
   DKFZ, 
-  G160
-  Im Neuenheimer Feldt 280
-  Heidelberg 69120
+  G160,
+  Im Neuenheimer Feldt 280,
+  Heidelberg 69120,
   Germany
