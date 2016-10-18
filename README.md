@@ -1,12 +1,14 @@
 edgreen/Docker_seq2HLA
 ======================
 
-4 digit HLA I&II typing pipeline from NGS data in BAM file (e.g. from TCGA data). 
+seq2HLA on BAM files
 
-Authors: Edward Green 
+Authors: Ed Green 
 Date: October 2016
-Version: 1.0  
+Version: 1.0 
 
+Installed Sofware
+[seq2HLA 2.2](http://tron-mainz.de/tron-facilities/computational-medicine/seq2hla/)
 
 Install from Docker hub
 -----------------------
