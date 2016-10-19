@@ -3,8 +3,8 @@ edgreen/Docker_seq2HLA
 
 seq2HLA on BAM files
 
-Authors: Ed Green \n
-Date: October 2016 \n
+Authors: Ed Green
+Date: October 2016
 Version: 1.0 
 
 Installed Sofware
