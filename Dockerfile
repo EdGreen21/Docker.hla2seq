@@ -27,6 +27,9 @@ WORKDIR /workspace/samtools-1.3.1
 RUN make
 RUN cp samtools /bin/
 
+RUN wget https://github.com/lomereiter/sambamba/releases/download/v0.6.4/sambamba_v0.6.4_linux.tar.bz2
+RUN tar -xvjf sambamba_v0.6.4_linux.tar.bz2
+RUN cp sambamba_v0.6.4 /bin/
 
 # Change workdir to /data/
 WORKDIR /workspace/
