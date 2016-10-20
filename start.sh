@@ -12,3 +12,5 @@ python /download/seq2hla/seq2HLA.py -1 /workspace/${inputBAM}_1.repair.fq -2 /wo
 
 #step 4: cleanup extracted files to save disk space
 rm /workspace/*.fq /workspace/*.sam
+
+exit
