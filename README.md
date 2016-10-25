@@ -35,6 +35,7 @@ Running seq2HLA
 Run with the following command, setting inputBAM as your BAM file (i.e. for foo.bam inputBAM=foo)
 > docker run -it -v /path/to/file/dir/:/workspace/ -e inputBAM=xx -e threadsN edgreen/seq2hla:latest
 
+Remember to use the docker run --rm command if you want to remove the stopped container, otherwise looping over files will take up a lot of disk space! 
 
 Example script for processing TCGA data
 ---------------------------------------
